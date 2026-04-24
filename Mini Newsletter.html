@@ -30,5 +30,20 @@
  
   <button type="submit">Subscribe</button>
 </form>
+<script>
+    const form = document.querySelector('.card-form');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const name = form.name.value;
+  const email = form.email.value;
+  const topic = form.topic.value;
+  console.log(`Name: ${name}, Email: ${email}, Topic: ${topic}`);
+
+
+form.innerHTML = `<h2>Success!</h2>
+                      <p>Welcome to the team, <strong>${name}</strong>.</p>
+                      <p>We'll send you the latest in <strong>${topic}</strong> soon.</p>`;
+});
+</script>
 </body>
 </html>
