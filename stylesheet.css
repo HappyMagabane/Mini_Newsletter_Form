@@ -65,4 +65,28 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background: #1d4ed8;
 }
+.success-container {
+  text-align: center;
+  padding: 10px 0;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.success-container h2 {
+  color: #2563eb; /* Matches your primary button color */
+  margin-bottom: 8px;
+}
+/*Script Styling*/
+
+.success-container p {
+  color: #475569; /* A soft dark gray for readability */
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+/* Subtle fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+ 
  
