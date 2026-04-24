@@ -1,0 +1,68 @@
+/* Universal Box Sizing */
+* { box-sizing: border-box; }
+ 
+/* Page Background & Font */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 24px;
+}
+ 
+/* The Card Container */
+.card-form {
+  max-width: 460px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+ 
+/* Input Group Spacing */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+ 
+label {
+  font-size: 14px;
+  font-weight: 600;
+}
+ 
+/* Input Fields */
+input, select, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+}
+ 
+/* Accessibility: Focus States */
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+ 
+/* Primary Button */
+button[type="submit"] {
+  border: none;
+  border-radius: 8px;
+  padding: 11px 14px;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+ 
+/* Interaction: Hover State */
+button[type="submit"]:hover {
+  background: #1d4ed8;
+}
+ 
